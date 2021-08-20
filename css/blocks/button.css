@@ -1,0 +1,46 @@
+.button {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 31.5rem;
+    height: 7rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%), linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+    background-size: 40%, 100%;
+    background-repeat: no-repeat no-repeat;
+    margin-bottom: 3.4rem;
+}
+
+.button--one {
+    background-position-x: 0, center;
+}
+
+.button--two {
+    background-position-x: 33%, center;
+}
+
+.button--three {
+    background-position-x: 66%, center;
+}
+
+.button--four {
+    background-position-x: 100%, center;
+}
+
+.button--green {
+    background: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%), linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);
+    background-size: 40%, 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0, center;
+}
+
+@media (max-width: 500px) {
+    .button {
+        width: 18rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+}

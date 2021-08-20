@@ -1,0 +1,56 @@
+.select {
+    display: block;
+    font-size: 2.5rem;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align-last: center;
+    text-align: center;
+    color: #202024;
+    padding: 1.2rem .9rem 1.1rem .7rem;
+    width: 31.5rem;
+    height: 7rem;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: 50px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: url("../../img/arrow.svg"), linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 1rem center, center;
+    margin-bottom: 2rem;
+}
+
+.select::-ms-expand {
+    display: none;
+}
+
+.select:hover {
+    border-color: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%)
+}
+
+.select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(254, 173, 53, 0.9);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    outline: none;
+}
+
+.select option {
+    font-weight: normal;
+}
+
+.select--required {
+    border: 1px solid #EE5353;
+}
+
+@media (max-width: 500px) {
+    .select {
+        width: 18rem;
+        height: auto;
+        font-size: 1.4rem;
+    }
+}

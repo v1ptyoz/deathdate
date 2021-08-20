@@ -1,0 +1,181 @@
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+.app--page {
+    margin-bottom: 0;
+}
+
+.app__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4.2rem;
+}
+
+.app__content--final {
+    padding: 0;
+}
+
+.app__content .app__question {
+    margin-bottom: 4rem;
+}
+
+.app__content .app__question-number {
+    position: relative;
+    margin-top: 3.6rem;
+}
+
+.app__content .app__question-number:after {
+    content: url("../../img/eye.svg");
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: -25%;
+    opacity: .2;
+}
+
+.app__header {
+    width: 100%;
+    max-width: 144rem;
+    overflow: hidden;
+    position: relative;
+    font-family: "Bad Script";
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding: 3rem 4.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__header p {
+    /* width: 40rem; */
+    max-width: 41rem;
+}
+
+.app__header--w100 {
+    width: 100%;
+}
+
+.app__header::after {
+    content: url("../../img/eye-1.svg");
+    display: block;
+    position: absolute;
+    bottom: -0.5rem;
+    right: -3rem;
+    opacity: .2;
+}
+
+.app__question {
+    margin-bottom: 4.6rem;
+    max-width: 500px;
+}
+
+.app__question-number {
+    align-self: stretch;
+    font-weight: 300;
+}
+
+.app__popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.2rem;
+    opacity: 0;
+    width: 48rem;
+    height: 18.5rem;
+    color: #202024;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    position: relative;
+    transition: opacity 1s ease;
+}
+
+.app__popup--show {
+    opacity: 1;
+}
+
+.app__popup::after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.8rem;
+    right: .8rem;
+    transform: rotate(45deg) skew(13deg, 13deg);
+}
+
+.app--final {
+    font-size: 1.4rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.app--final .app__popup {
+    opacity: 1;
+    font-family: "Roboto";
+}
+
+.app--final .app__header {
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.app--final .app__header::after {
+    content: "";
+}
+
+.app__text {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.app .benefit {
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.app .benefit__wrapper {
+    padding: 1.5rem 2.8rem;
+    line-height: 2.5rem;
+}
+
+.app--final .app__content {
+    padding: 0 3rem;
+}
+
+@media (max-width: 500px) {
+    .app__question {
+        margin-bottom: 2.6rem;
+    }
+    .app__header {
+        padding: 0 4.2rem;
+        height: 12.4rem;
+    }
+    .app__header p {
+        max-width: 23.5rem;
+        line-height: 2rem;
+        font-size: 1.4rem;
+    }
+    .app__popup {
+        padding: 1.2rem;
+        width: 26rem;
+        height: 8.5rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}

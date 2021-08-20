@@ -1,0 +1,14 @@
+.footer__content {
+    font-size: .7rem;
+    line-height: .9rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+.footer-app {
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+}

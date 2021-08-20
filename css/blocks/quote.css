@@ -1,0 +1,78 @@
+.quote {
+    font-family: "Bad Script";
+    margin-bottom: 7rem;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.quote::after {
+    content: url("../../img/eye-1.svg");
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: 10%;
+    opacity: .2;
+}
+
+.quote::before {
+    content: url("../../img/eye.svg");
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 10%;
+    opacity: .2;
+}
+
+.quote__content {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding: 4rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote__content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/rune1.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 10px;
+    top: 0;
+}
+
+.quote__content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/rune2.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 10px;
+    bottom: 0;
+}
+
+@media (max-width: 500px) {
+    .quote {
+        margin-top: 0;
+    }
+    .quote__content {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .quote::before {
+        left: -10px;
+    }
+    .quote::after {
+        content: url("../../img/eye-1.svg");
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: -30px;
+        opacity: .2;
+    }
+}

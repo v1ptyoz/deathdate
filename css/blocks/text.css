@@ -1,0 +1,41 @@
+.text {}
+
+.text--bold {
+    font-weight: 700;
+}
+
+.text--yellow {
+    color: #F6C866;
+}
+
+.text--gray {
+    opacity: .6;
+}
+
+.text--upper {
+    text-transform: uppercase;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--sparse {
+    letter-spacing: 0.1em;
+}
+
+.text--12 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.text--big {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 500px) {
+    .text--big {
+        font-size: 2rem;
+    }
+}

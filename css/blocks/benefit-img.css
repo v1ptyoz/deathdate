@@ -1,0 +1,29 @@
+.benefit-img {
+    padding: 24rem 5rem 18rem 5rem;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("../../img/benefit-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position-x: 55%;
+    background-position-y: 55%;
+    font-size: 2.5rem;
+}
+
+.benefit-img .text--big {
+    font-weight: 400;
+}
+
+.benefit-img .benefit--content {
+    max-width: 38rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .benefit-img {
+        padding: 10rem 5rem 8rem 5rem;
+        font-size: 1.6rem;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%), url("../../img/benefit-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat no-repeat;
+        background-position-x: 55%;
+    }
+}

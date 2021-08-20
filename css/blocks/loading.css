@@ -1,0 +1,45 @@
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loading__spinner {
+    margin-bottom: 2.7rem;
+    animation: more 2s linear infinite forwards;
+}
+
+.loading__microphone {
+    margin-bottom: 40px;
+}
+
+.loading__load {
+    width: 260px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.loading__load span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #F6C866;
+    border-radius: 5px;
+}
+
+@keyframes more {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

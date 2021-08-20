@@ -1,0 +1,38 @@
+.benefit {
+    padding: 4rem 3.4rem;
+    margin-bottom: 4rem;
+}
+
+.benefit__wrapper {
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12.8rem 3.2rem 8rem 3.2rem;
+}
+
+.benefit__img {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.benefit__content {
+    line-height: 3.5rem;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 500px) {
+    .benefit__wrapper {
+        padding: 6rem 2rem 3rem 2rem;
+    }
+    .benefit__content {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
